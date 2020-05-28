@@ -285,8 +285,8 @@ FileNotFoundError: [Errno 2] No such file or directory: 'hosts.csvw'
 ... 
 >>> 
 ]0;azeez@azeez-Latitude-E5410: ~/Documents[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents[00m$ cat hosts.csv 
-workstation.local,192.168.25.46
-webserver.local,10.2.5.6
+workstation.local,192.168.25.46
+webserver.local,10.2.5.6
 ]0;azeez@azeez-Latitude-E5410: ~/Documents[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents[00m$ cat hosts.csv [7Ppython3
 Python 3.6.9 (default, Apr 18 2020, 01:56:04) 
 [GCC 8.4.0] on linux
@@ -363,10 +363,10 @@ KeyboardInterrupt
 ... 
 >>> 
 ]0;azeez@azeez-Latitude-E5410: ~/Documents[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents[00m$ cat by_department.csv 
-name,username,department
-Sol Mansi,solm,IT infrastructure
-Lio Nelson,lion,User Experience Research
-Charlie Grey,greyc,Development
+name,username,department
+Sol Mansi,solm,IT infrastructure
+Lio Nelson,lion,User Experience Research
+Charlie Grey,greyc,Development
 ]0;azeez@azeez-Latitude-E5410: ~/Documents[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents[00m$ mk[K[Kexit
 exit
 
