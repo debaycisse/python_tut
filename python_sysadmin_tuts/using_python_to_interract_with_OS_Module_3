@@ -187,4 +187,192 @@ SyntaxError: invalid syntax
 None
 >>> print(re.search('cloud[0-9]', 'cloudy999'))[1@y[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
 <_sre.SRE_Match object; span=(0, 7), match='cloudy9'>
->>> print(re.search('cloudy[0-9]', 'cloudy999'))[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C"cloud[a-zA-Z0-9]", "cloudy9"))[C[C[C[C[C[C[C
+>>> print(re.search('cloudy[0-9]', 'cloudy999'))[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C"cloud[a-zA-Z0-9]", "cloudy9"))[C[C[C[C[C[C[CScript started on 2020-05-29 11:46:32+0100
+]0;azeez@azeez-Inspiron-15-3567: ~/Documents[01;32mazeez@azeez-Inspiron-15-3567[00m:[01;34m~/Documents[00m$ python3
+Python 3.6.9 (default, Apr 18 2020, 01:56:04) 
+[GCC 8.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> # Simple Matching in python
+... 
+>>> print[K[K[K[K[Kresult = re[K[K[K[K[K[K[K[K[K[K[Kimport re
+>>> result = re.search()r)@)@)[1P)[1P)")")[1P)a)z)e)[1P)a)"),) )")p)l)a)z)a)")[C
+>>> print(result)
+<_sre.SRE_Match object; span=(2, 5), match='aza'>
+>>> print(result)[C[C[C[Cresult = re.search(r"aza", "plaza")[1Pa")[1P")[1Pa")[1Pa")[1P")b")a")z")a")a")r")[C[C
+>>> result = re.search(r"aza", "bazaar")[C[C[C[C[23Pprint(result)
+<_sre.SRE_Match object; span=(1, 4), match='aza'>
+>>> print(result)[C[C[C[Cresult = re.search(r"aza", "bazaar")[1P")[1P")[1P")[1P")[1P")[1P")m")a")z")e")[C[C
+>>> result = re.search(r"aza", "maze")[C[C[C[C[21Pprint(result)
+None
+>>> @[K~ [K[K# since there is no matching worl[Kd in the given text
+... 
+>>> print(re.search(r"x", "xenon"))[1@^[C[C[C[C[C[C[C[C[C[C[C[C[C
+<_sre.SRE_Match object; span=(0, 1), match='x'>
+>>> print(re.search(r"^x", "xenon"))[1P"))[1P"))[1P"))[1P"))[1P"))p"))e"))n"))g"))u"))i"))n"))[1P[1P[1@p[1@.[1@n[1@g[C[C[C[C[C[C[C[C[C[C[C[C[C[C  # dot i s[K[Ks used to match any single char acet[K[Kter
+<_sre.SRE_Match object; span=(0, 4), match='peng'>
+>>> print(re.search(r"p.ng", "penguin"))  # dot is used to match any single charaacter[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C^x", "xenon"))[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C# since there is no matching word in the given text[C[C[C[C[19Pprint(re.search(r"^x", "xenon"))p.ng", "penguin"))  # dot is used to match any single charaacter[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[1P[1P[1P[1P[1P[1P[1@c[1@l[1@a[1@p[1@p[1P[1P[1P[1P[1P[1P[1@c[1@l[1@a[1@p[1@p[1@i[1@n[1@g
+<_sre.SRE_Match object; span=(4, 8), match='ping'>
+>>> print(re.search(r"p.ng", "clapping")) [1P[1P[1P[1P[1P[1P[1P[1P[1@s[1@p[1@o[1@n[1@g[1@e[C[C[C[C
+<_sre.SRE_Match object; span=(1, 5), match='pong'>
+>>> print(re.search(r"p.ng", "sponge")) [2@clapping[C[C[C[C[2Psponge[C[C[C[C[1@,[1@ [1@r[1@e[1@.[1@I[1@G[1@N[7@ORECASE[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1@P[1@a[1@n[1@g[1@e[1@a[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+<_sre.SRE_Match object; span=(0, 4), match='Pang'>
+>>> print()r)e).)s)e)a)rch()[C)r))@))[1P))"))[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+>>> # to seac[Krch a [K[K[K[K[K[K[K[K[K[K[K[K[K[KTo restrict our search pattern to a group of characters - more than a single  character, we will use ch[K[K'character class'...[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C#To restrict our search pattern to a group of characters - more than a single[1@ [A[C[C[C To restrict our search pattern to a group of characters - more than a singl[1@e[A[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+... ~ [K[K# character classes are written in between squared bracket and[K[K[K[K
+... 
+>>> ~ [K[K# For exampe[K[K[K[K[K[K[K[K[K[KExampel[K[Kles : To search for n[Kbop[K[K[K[K both [K[K[K[K[K'p' as a pette[K[K[K[Kattren and allow the pattern to accept  both lower and uppercase...our code will look like the below.
+... print()r)e).)s)e)a)rch()[C)r))"))[))]))p]))P]))[Cy))t))h))o))n))[C")),)) ))"))P))y))t))h))o))n))"))[C[C)[C[K[C[C
+<_sre.SRE_Match object; span=(0, 6), match='Python'>
+>>> 
+>>> # Any charcte[K[K[Kacter from[K[K[K[Kbetween a to z[K[K[K[K[K[K'a' to 'z' can also be searched, like this 
+... print()r)e).)s)e)arch()[C)r))'))[1P))'))[))a))-))z))]))')),)) ))'))'))[1@w[1@a[1@y[C[C[C[CT'))h'))e')) '))e'))n'))d')) '))o'))f')) '))t'))h'))e')) '))h'))i'))g'))h')) '))w'))a'))y'))[C[C[C
+None
+>>> print(re.search(r'[a-z]way', 'The end of the high way'))[1Pway'))[C[C[C[C[C[C
+<_sre.SRE_Match object; span=(18, 22), match='hway'>
+>>> print(re.search(r'[a-z]way', 'The end of the highway'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))W'))h'))a'))t')) '))a')) '))w'))a'))y')) '))t'))o')) '))g'))o'))[C[C[C
+None
+>>> '[K# we go because there is space before the word #[K'way'
+... 
+>>> print()r)e).)s)e)a)r)ch()[C)r))"))"))["))]"))a]"))-]"))z]"))A]"))-]"))Z]"))0]"))-]"))9]"))c[a-zA-Z0-9]"))l[a-zA-Z0-9]"))o[a-zA-Z0-9]"))u[a-zA-Z0-9]"))d[a-zA-Z0-9]"))[C[C[C[C[C[C[C[C[C[C[C[C,)) ))"))c))l))o))u))d))y))"))[C[C
+<_sre.SRE_Match object; span=(0, 6), match='cloudy'>
+>>> 
+>>> 
+>>> print(re.search(r"cloud[a-zA-Z0-9]", "cloudy"))[1P"))9"))[C[C[C
+<_sre.SRE_Match object; span=(0, 6), match='cloud9'>
+>>> 
+>>> 
+>>> 
+>>> # To search for a pattern i[Ktaht is [K[K[K[K[K[K[Khat is no [Kt in a group, we will use caret in [Kside a  character class' squared bracket - [^] .... lis[Kke the below
+... 
+>>> print()r)e).)s)e)r)[1P)a)rch()[C)r))@))[1P))"))"))["))^"))a"))-"))z"))A"))-"))Z"))]"))[C,)) ))"))"))T"))h"))e")) "))[1P"))[1P"))i"))s")) "))i"))s")) "))a")) "))s"))e"))n"))t"))e"))n"))c"))e")) "))w"))i"))h"))t"))[1P"))[1P"))t"))h")) "))s"))p"))a"))c"))e"))s"))."))[C[C[C  ~ [K[K# ths[Kisi s  [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K is  going to match a sentence[K[K[K[K[K[K[K[K[K[Kany other charat[Kcter than a[K'aa[K' to 'z' or 'A' to 'Z'
+<_sre.SRE_Match object; span=(4, 5), match=' '>
+>>> # as shown it matched only the first sop[K[Kpace.
+... 
+>>> 
+>>> 
+>>> # as shown it matched only the first space.[C[C[C[Cprint(re.search(r"[^a-zA-Z]", "This is a sentence with spaces."))  # this is  going to match any other character than 'a' to 'z' or 'A' to 'Z'[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[C[C[C[C[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C  # Since  we have jus t[K[Ks[Kt added space character in our pattern, it means that space w[Kcharacter  will be among the character that will not be matched...see the below matched ch aracter for confirmation.
+<_sre.SRE_Match object; span=(30, 31), match='.'>
+>>> @[K@[K~ [K# yes[K[K[K[K[K[K# yes, it matched '.' which is the only character that is not specified in o ur pattern - character class
+... 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> DD[K[K# tO SEARCH [K[K[K[K[K[K[K[K[K[KTo search for either a char[K[K[K[Kpattern or the [K[K[K[Kanother, we use pipe - | 
+... pri[K[K[K
+>>> print()r)e).)s)e)arch()[C)r))'))'))c'))a'))t'))|'))d'))g'))[1P'))o'))g'))[C,)) ))'))H))e)) ))l))i))k))e))s)) ))c))a))t))s)).))'))[C[C
+<_sre.SRE_Match object; span=(9, 12), match='cat'>
+>>> # it matched cats[Ks[K...;[Klet's check another exampe using dog[Kg
+... 
+>>> # it matched cat...let's check another exampe using dog[C[C[C[C[9Pprint(re.search(r'cat|dog', 'He likes cats.'))[1Ps.'))[1Ps.'))[1Ps.'))[1Ps.'))[1P.'))[1Ps.'))[1Ps.'))[1Ps.'))[1Ps.'))ds.'))os.'))ns.'))[1Ps.'))es.'))[Cs.'))ts.')) s.'))ns.'))os.'))ts.'))[1Ps.'))[1Ps.'))[1Ps.'))[1Ps.'))[1Ps.')) s.'))ns.'))os.'))ts.')) s.'))ls.'))is.'))ks.'))es.')) s.'))ds.'))os.'))gs.'))[C[C[C[C[C
+<_sre.SRE_Match object; span=(17, 20), match='dog'>
+>>> # yes, this time arround, it matched dog
+... 
+>>>     k[K[Kkk[K[Klet's[K[K[K[K[K# Let's try with a [Km[Kn expression that contains both cat and dog
+... 
+>>> # Let's try with an expression that contains both cat and dog[C[C[C[C[C[C[21Pyes, this time arround, it matche[C[C[C[C[C[C[C[C[Cprint(re.search(r'cat|dog', 'He does not like dogs.')) .'))a.'))n.'))d.')) .'))c.'))a.'))t.'))s.'))[C[C[C[C
+<_sre.SRE_Match object; span=(17, 20), match='dog'>
+>>>  ~ [K[K[K# it matched only the first found pattern
+... 
+>>> ~[K# top find [K[K[K[K[K[K[K find all posi[Ksible ot[Kutcome [Ks oh[Kther than the first-to-be-found, we will us e another function of re module, called 'findall'
+... 
+>>> print()r)e).)f)i)n)d)a)ll()[C)r))e))[1P))[1P))r))'))c))a))t))s))|))d))o))g))s))]))[cats|dogs]))[C[C[C[C[C[C[C[C[C[C')),)) ))'))H))e)) ))d))o))e))s)) ))n))o))t)) ))l))i))k))e)) ))b))o))t))h)) ))c))a))t))s)) ))a))n))d)) ))d))o))g))s))'))[C[C
+['d', 'o', 's', 'o', 't', 'o', 't', 'c', 'a', 't', 's', 'a', 'd', 'd', 'o', 'g', 's']
+>>> print(re.findall(r'[cats|dogs]', 'He does not like both cats and dogs'))[1P[1P[C[C[C[1P[C[C[C[1P[1P[1@g[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+['cat', 'dog']
+>>> 
+>>> 
+>>> ~ [K[K# What do you think that we will need op[K[Kto do, if we want top [K[K march ma[Kore than o nce
+... 
+>>> 
+>>> 
+>>> 
+>>> # Repetition Qualifies[Krs
+... 
+>>> ff[K[K# That is a way to match pattern as many times as possible or as the phrase  implies r[K'repeatedly'
+... 
+>>> # .*u.*s.*i.*n.* .*[1P.*g.* .*[C[C[C[C - dot and star, will match any character but as many timer[Ks as pos sible
+... 
+>>> print(re.search('Py*[K.*n'[C[C[C[C[C[C[C[Cr'Py.*n'[C[C[C[C[C[C[C, [1@p[1@[[C[C[1@][C[C[C[C[C[C[C ' P y g m a l i o n ' ) ) 
+<_sre.SRE_Match object; span=(0, 9), match='Pygmalion'>
+>>> print(re.search(r'[pP]y.*n', 'Pygmalion')) [1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@,[1@ [1@r[1@e[1@.[1@I[1@G[8@NORECASE[C[C[C
+<_sre.SRE_Match object; span=(0, 9), match='Pygmalion'>
+>>> 
+>>> print(re.search(r'py.*n', 'Pygmalion', re.IGNORECASE)) [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12P[pP]y.*n', 'Pygmalion'[C[C[C[C[C[C[C# using .* - dot and star, will match any character but as many times as posssible[A[33Pprint(re.search(r'[pP]y.*n', 'Pygmalion')) 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1@P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1@t[1@h[1@o[1@n[1@ [1@P[1@r[1@o[1@g[1@r[1@a[1@m[1@m[1@i[1@n[1@g[C[C[C[C
+<_sre.SRE_Match object; span=(0, 17), match='Python Programmin'>
+>>> 
+>>> 
+>>> ~[K# Matching as many time [Ks to [K[K[K[K, is called 'greedy#[K' in por[K[Krogramming tern[Km...though it  is ma=[K[Kodifiedable [K[K[K[K[K-able
+... 
+>>> 
+>>> 
+>>> ~ [K#[K[K# if we want the p[Kpattern to matc [Kh only th[K[Kcharacter [K- [K[K - withouut[K[Kt s[Ke[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ktext character, excluding the exclama tion characters [K, like space, comma and so on...we will need to use the ch[K[K[K[K[K[K[K[K[K[Kspecify the range r [K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce  of our character instead of using dot.
+... 
+>>> 
+>>> # if we want the pattern to match only text character, excluding the exclamattion characters, like space, comma and so on...we will need to specify the range  of our character instead of using dot.[A[A[C[C[C[C[C[CMatching as many times, is called 'greedy' in programming term...though it [Cs modified-able[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[27Pprint(re.search(r'Py.*n', 'Python Programming')) 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1@[[1@][1@a[1@-[1@z[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+<_sre.SRE_Match object; span=(0, 6), match='Python'>
+>>> 
+>>> 
+>>> print(re.search(r'Py[a-z]*n', 'Python Programming')) [C[C[C[C# if we want the pattern to match only text character, excluding the exclamattion characters, like space, comma and so on...we will need to specify the range  of our character instead of using dot.[A[A[C[C[C[C[C[CMatching as many times, is called 'greedy' in programming term...though it [Cs modified-able[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[27Pprint(re.search(r'Py.*n', 'Python Programming')) 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[C[C[C[1P[1P[1@*[1@[[1@][1@a[1@-[1@z[C[C[C[C[C[C[C[C[C[C[C[C[C[C [C ~ [1P 
+<_sre.SRE_Match object; span=(0, 3), match='Pyn'>
+>>> # It matched the word, because zeo[Kro match of the given pattern in between th e op[Kther given pattern is la[K[Kalso possible and allowex[Kd
+... 
+>>> 
+>>> 
+>>> +? [1@#[1@ [C[C[Ccan be used to construct more complex pattern matching
+... # + - is used to match occurence of a [C[C[C[C[C[C[1@ [1@o[1@n[1@e[C[1@ [1@o[1@r[C[1@ [1@m[1@o[1@r[1@e[C[C[C[C[C[C[C[C[C[C[1@s[C[C[C[C[C[C[K[Ka gi[K[Kpattern that is given bef ore it -[K[K, like o+ - this means more[K[K[K[Kone or more occurences of t[Kletter 'o'
+... 
+>>> print(re.search(r"o=[K+l+@[K", '[K"goldfish"))  # ths [K[Kis should match mo[K[Kone or more opc[K[Kccur n[Kences of the [K[K[K[Kboth 'o' and 'l'
+<_sre.SRE_Match object; span=(1, 3), match='ol'>
+>>> # there is only one occurence of both as ho[K[Kshow[K[K[K[K[K[K[K[K[K[K[K[K'ol'[K[K[K[K'o' and 'l' , [K[K[K, that is 'ol'
+... 
+>>> # there is only one occurence of 'o' and 'l', that is 'ol'[C[C[C[Cprint(re.search(r"o+l+", "goldfish"))  # this should match one or more occureences of both 'o' and 'l'[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[1P[1P[1P[1P[1P[1P[1P[1P[1@w[1@o[1@o[1@l[1@y[1P[1@l[1@y[C[C[C[C
+<_sre.SRE_Match object; span=(1, 5), match='ooll'>
+>>> 
+>>> 
+>>> # Let's try some [Kthin [Kg that doen[Ks not match
+... # Let's try something that does not match[C[C[C[C[5Pprint(re.search(r"o+l+", "woolly")) [1P[1P[1P[1P[1P[1P[1@b[1@o[1@i[1@l[C[C[C[C
+None
+>>> # Since 'o' and 'l' never followed themselves or coma [K[Ke after one another in t he search data
+... 
+>>> #[K
+>>> 
+>>> 
+>>> # ? - thu=[K[Ks [K[Kis is usd [K[Ked y=[Kt[K[Kto match 0 or 1 occurence of a given pattern before it.
+... ~[K# Let's see th[Kit [K[K[K[Kit in anexam[K[K[K[K exampe[Kle below.
+... 
+>>> print(re.search(r'r[Kp>[K?each', 'To each their own'))
+<_sre.SRE_Match object; span=(3, 7), match='each'>
+>>> ~[K# Since the [K[K[K[K'p' which is among the given pattern i[K[K, is not present [K, then it is igo [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn ored r [K[Kor makr[K[Kt[Krked as optional;[K.
+... # L:[Ket's see another example in which 'p' is present
+... 
+>>> # Let's see another example in which 'p' is present[C[C[C[C[C[CSince 'p' which is among the given pattern, is not present, then it is ignoored or marked as optional.[A[C[C[C[C[28Pprint(re.search(r'p?each', 'To each their own'))
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))I')) '))l'))i'))k'))e')) '))p'))e'))a'))c'))h'))e'))s'))[C[C[C
+<_sre.SRE_Match object; span=(7, 12), match='peach'>
+>>> print(re.search(r'p?each', 'I like peaches')) '))t'))e'))a'))[1P'))[1P'))e'))r'))e'))a'))c'))h'))e'))s')),'))[1P')) '))a'))n'))d')) '))t'))r'))e'))c'))h'))[1P'))[1P'))c'))h'))e'))r'))o'))u'))s')) '))o'))f')) '))b'))e')) [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca')))[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc'))[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ch'[C) '))[Ca'))n'))d')) '))r'))e'))a'))c'))h'))[C[C[C
+<_sre.SRE_Match object; span=(7, 12), match='peach'>
+>>> 
+>>> 
+>>> 
+>>> 
+>>> xx[K[Kexit()
+]0;azeez@azeez-Inspiron-15-3567: ~/Documents[01;32mazeez@azeez-Inspiron-15-3567[00m:[01;34m~/Documents[00m$ exit
+exit
+
+Script done on 2020-05-29 14:36:49+0100
