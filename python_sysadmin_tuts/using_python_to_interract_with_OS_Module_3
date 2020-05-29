@@ -1,0 +1,190 @@
+Script started on 2020-05-29 05:37:41+0100
+]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ grep [K[K[K[K[K# we are using gr[K[K;[K'r=[K[Kgrep' along[K[K[K[K[Kto search for every word that contains 'thon' in 
+]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ # /usr/share/wordsdwordsiwordscwordstwords/words[C[C[C[C[C file
+]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ grep thon /usr/share/dictwor[K[K[K/words
+An[01;31m[Kthon[m[Ky
+An[01;31m[Kthon[m[Ky's
+Johna[01;31m[Kthon[m[K
+Johna[01;31m[Kthon[m[K's
+Jona[01;31m[Kthon[m[K
+Jona[01;31m[Kthon[m[K's
+Mara[01;31m[Kthon[m[K
+Mara[01;31m[Kthon[m[K's
+Phae[01;31m[Kthon[m[K
+Phae[01;31m[Kthon[m[K's
+Py[01;31m[Kthon[m[K
+Py[01;31m[Kthon[m[K's
+diph[01;31m[Kthon[m[Kg
+diph[01;31m[Kthon[m[Kg's
+diph[01;31m[Kthon[m[Kgs
+mara[01;31m[Kthon[m[K
+mara[01;31m[Kthon[m[K's
+mara[01;31m[Kthon[m[Ker
+mara[01;31m[Kthon[m[Ker's
+mara[01;31m[Kthon[m[Kers
+mara[01;31m[Kthon[m[Ks
+py[01;31m[Kthon[m[K
+py[01;31m[Kthon[m[K's
+py[01;31m[Kthon[m[Ks
+tele[01;31m[Kthon[m[K
+tele[01;31m[Kthon[m[K's
+tele[01;31m[Kthon[m[Ks
+[01;31m[Kthon[m[Kg
+[01;31m[Kthon[m[Kg's
+[01;31m[Kthon[m[Kgs
+]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ # to match our pattern ire[Krespective of the character case, we wil [Kl add -i to the grep, like this [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ke'll add -i to the grep, like this
+]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ grep -i thon [K[K[K[K[Kpython /usr/share/di
+dict/                dictionaries-common/ distro-info/         
+]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ grep -i python /usr/share/dict/words
+[01;31m[KPython[m[K
+[01;31m[KPython[m[K's
+[01;31m[Kpython[m[K
+[01;31m[Kpython[m[K's
+[01;31m[Kpython[m[Ks
+]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ # We g[Khave tp know the resweer[K[K[K[Kerved characters that give extra-meaning toi [K[K out search patterns
+]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ # For example - dot marches any character
+]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ # it is a wild [K-card per se
+]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ grep[K[K[K[K# let's use it to search fro [K[K[K[K[K[K[K[K[K[K[K[K[K[Kin [K[K[K[K
+]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ grep l.rts /use[Kr/share/dict/words  # it[K[Kdot is usedc [K[K to match any words in betweenl and [K[K[K[K[K[K[Kn 'l' and[K[K[K& 'rts'
+a[01;31m[Klerts[m[K
+b[01;31m[Klurts[m[K
+f[01;31m[Klirts[m[K
+]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ # another special character is caret or [K[K[K[K[K[K[K[K[K^ which is called caret or circumflex
+]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ # it[K[K^ indicat[K[K[K[K[K[K[K[K[K[K[K# with dollar sign $...[K[K[K . the caret indic[K[K[K[K[K[K[K[K[K[K[K^ indicates the beginning while $ indicates the end.
+]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ grep ^fruit /usr/share/dict/wordsr[K  # it searches for character that starts with 'fruit'
+[01;31m[Kfruit[m[K
+[01;31m[Kfruit[m[K's
+[01;31m[Kfruit[m[Kcake
+[01;31m[Kfruit[m[Kcake's
+[01;31m[Kfruit[m[Kcakes
+[01;31m[Kfruit[m[Ked
+[01;31m[Kfruit[m[Kful
+[01;31m[Kfruit[m[Kfully
+[01;31m[Kfruit[m[Kfulness
+[01;31m[Kfruit[m[Kfulness's
+[01;31m[Kfruit[m[Kier
+[01;31m[Kfruit[m[Kiest
+[01;31m[Kfruit[m[King
+[01;31m[Kfruit[m[Kion
+[01;31m[Kfruit[m[Kion's
+[01;31m[Kfruit[m[Kless
+[01;31m[Kfruit[m[Klessly
+[01;31m[Kfruit[m[Klessness
+[01;31m[Kfruit[m[Klessness's
+[01;31m[Kfruit[m[Ks
+[01;31m[Kfruit[m[Ky
+]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ grep cat$ /usr/share/dict/words  # to search for character that end with 'cat'
+Mus[01;31m[Kcat[m[K
+bob[01;31m[Kcat[m[K
+[01;31m[Kcat[m[K
+copy[01;31m[Kcat[m[K
+du[01;31m[Kcat[m[K
+lol[01;31m[Kcat[m[K
+mus[01;31m[Kcat[m[K
+pole[01;31m[Kcat[m[K
+pussy[01;31m[Kcat[m[K
+s[01;31m[Kcat[m[K
+tom[01;31m[Kcat[m[K
+wild[01;31m[Kcat[m[K
+]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ # Simple Matching in Python[C[C[C[C[C[C - marching [K[K[K[K[K[K[Ktching of text or string characters
+]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ # we use re module in python for regular expression
+]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ pyt[K[K[K# lets [K[K's see how it works in pyt[K[K[K[K[K[K[K[K[K[K[K[K[K's used in python
+]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ python3
+Python 3.6.9 (default, Apr 18 2020, 01:56:04) 
+[GCC 8.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> im[K[K#[Kimport re  # the [K[K[K[Kregular expression module in python is 're'
+>>> result = re.search('[Kr''a'z'a'[C, 'plaza')  # we are searching for aza as a pattern in a given string 's[Kplax[K[Kz[K[Kaz[K[Klaza'. the[K[K[KThe 'r' at the beginning of the string indicates  that the string in the[K[K[Kbetween the quotes, is raw-string, wh[K[K[K[K which is what we need to process.
+>>> # And the result is stored in 'result' varaiable/[K.
+... 
+>>> print(result)
+<_sre.SRE_Match object; span=(2, 5), match='aza'>
+>>> # Rwstring [C[C[C[C[C[C[C[1@a[C[C[C[C[C[C[C[Cmeans that puyth[K[K[K[Kython should not interpret the string but should just pass it as it is to the function that owns the [K[K[K[K[K[K[K[K[K[K[K[K[K[Kin whose bracket the [K[K[K[K[K[Ktrs[K[Ks the r[Kstring is given.
+... 
+>>> # Always use rawstring for regular expression in python.
+... 
+>>> # Always use rawstring for regular expression in python.[C[C[C[C[C[CRawstring means that python should not interpret the string but should just pass it as it is to the function in whose brackets the string is given.[C[C[C[Cprint(result)[K[C[C[C[C# And the result is stored in 'result' varaiable.[C[C[C[Cresult = re.search(r'aza', 'plaza')  # we are searching for aza as a pattern in a given string 'plaza'. The 'r' at the beginning of the string indicates tthat the string in between the quotes, is raw-string which is what we need to process.[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[1P[1P[1P[1@b[1@a[C[C[1@a[1@r
+>>> print(result)
+<_sre.SRE_Match object; span=(1, 4), match='aza'>
+>>> # Let's pass s[Ka string that does not match the expression[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+... 
+>>> # Let's pass a string that does not match the expression[C[C[C[Cprint(result)[K[C[C[C[Cresult = re.search(r'aza', 'bazaar')  [1P[1P[1P[1P[1P[1P[1@m[1@a[1@z[1@e[C[C[C[C
+>>> print(result)
+None
+>>> # let's str[K[K[Ktry with some of the special characters
+... print()r)e).)s)e)arch()[C)[C'))^))X))[1P))x))')),)) ))'))x))e))n))o))n))o))[1P))'))[C[C  # this means that it should search any character that begins with 'x'
+<_sre.SRE_Match object; span=(0, 1), match='x'>
+>>> 
+>>> # What about if we use dot
+... 
+>>> print()r)e).)s)e)a)rch()[C)r))'))p)).))n))g))')),)) ))'))p))e))n))g))u))i))n))'))[C[C
+<_sre.SRE_Match object; span=(0, 4), match='peng'>
+>>> # dot is used to represent any character - that is a single character for a single dot
+... 
+>>> # dot is used to represent any character - that is a single character for a single dot[C[C[C[C[50Pprint(re.search(r'p.ng', 'penguin'))[C[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))c'))l'))a'))p'))p'))i'))n'))g'))[C[C[C
+<_sre.SRE_Match object; span=(4, 8), match='ping'>
+>>> print(re.search(r'p.ng', 'clapping'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))s'))p'))o'))n'))g'))e'))[C[C[C
+<_sre.SRE_Match object; span=(1, 5), match='pong'>
+>>> 
+>>> # to match our pattern in CASE-INSENSITIVE M[Kmode or manner, we will add re.IGNORECASE option to our regular expression syntax
+... # to match our pattern in CASE-INSENSITIVE mode or manner, we will add re.IGNORECASE option to our regular expression syntax[C[C[C[Cprint(re.search(r'p.ng', 'sponge'))[K[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))clapping'))[K[C[C)[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))P'))a'))n'))g'))e'))a'))[C[C,)) ))r))e)).))I))G))N))ORECASE))[C[C
+<_sre.SRE_Match object; span=(0, 4), match='Pang'>
+>>> 
+>>> 
+>>> 
+>>> 
+>>> # Wild [K-card and character classes
+... 
+>>> # Wo[Kildcard is used to match any character but what about if we wi[Kant to restrict our pattern to a particular [K[K[K[K[K[K[K[K[K[K[Kspecific character, that is h[Kwhen we use character classe ss...th[K[K[K[K[K[K...they are written in between brackets - () and the given pattern insideth [K[K[K the bracket will [K[K[K[K[K[K, is what the regex will look up for in a f[Kg[K[K given data or file.
+... For example, let's mact[K[Ktch pattern that allow both upper an[K[K[Kcase and lowercase 'p'
+  File "<stdin>", line 2
+    For example, let's match pattern that allow both uppercase and lowercase 'p'
+              ^
+SyntaxError: invalid syntax
+>>> For example, let's match pattern that allow both uppercase and lowercase 'p'[C[C[C[C# Wildcard is used to match any character but what about if we want to restrict our pattern to a specific character, that is when we use character classess...they are written in between brackets - () and the given pattern inside the bracket, is what the regex will look up for in a given data or file.
+... # Wildcard is used to match any character but what about if we want to restrict our pattern to a specific character, that is when we use character classess...they are written in between brackets - () and the given pattern inside the bracket, is what the regex will look up for in a given data or file.[A[C[C[C[C[K
+[K[A[C[C[C[C# For exmaple [K, let's assume we want to match a pattern that allow nb[K[Kboth uppcas[K[K[Kercase & lowersace [K[K[K[K[Kcase 'p'
+... 
+>>> print()r)e).)s)e)a)rch()()[C)r))'))[))P))p))]))y))t))h))o))n))')),)) ))'))P))y))t))h))o))n))'))[C[C  # POM[KINT OF CORRECTION :- not[K[K[Kour pattern is housed inside square backet[K[K[K[K[K[K[Kd brackets [] and not 90[K[K()
+... 
+... 
+... )
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: search() missing 1 required positional argument: 'string'
+>>> )print(re.search((r'[Pp]ython', 'Python'))  # POINT OF CORRECTION :- our pattern is housed inside squared brackets [] and not ()[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+<_sre.SRE_Match object; span=(0, 6), match='Python'>
+>>> # we can use lowercase a to lo[K[K[K[K[K[K[K'a' to lowercase 'z' to macth [K[K[K[Ktch any character from 'a' to 'z'...let's see o[Kit in an example
+... print()r)e).)s)e)arch()[C)'))[1P))r))'))[))a))-))z))]))')),)) ))'))'))T'))h'))e')) '))e'))n'))d')) '))o'))f')) '))t'))h'))e')) '))h'))i'))g'))h'))w'))a'))y'))[C[C[C
+<_sre.SRE_Match object; span=(1, 2), match='h'>
+>>> print(re.search(r'[a-z]', 'The end of the highway'))[1@w[1@a[1@y[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+<_sre.SRE_Match object; span=(18, 22), match='hway'>
+>>> ptiny[K[K[K[Krint(r'','')[C[1P,'')[1P,'')[1P,'')r,'')e,'').,'')s,'')e,'')a,'')rch(,'')),'')[1P,'')[C[C)')[1P')[C[C)',''))',''))[Cr'',''))[C[',''))]',''))a]',''))-]',''))z]',''))[Cw',''))a',''))y',''))[C[C[CW'))h'))a'))t')) '))a')) '))w'))a'))y')) '))t')) '))[1P'))o')) '))g'))o'))[C[C[C
+None
+>>> N[K'none' is re[K[Kprinted because there is space before 'way' and space in[Ks not a character in a-z''a-z'[C[C[C[C
+  File "<stdin>", line 1
+    'none' is printed because there is space before 'way' and space is not a character in 'a-z'
+                            ^
+SyntaxError: invalid syntax
+>>> 'none' is printed because there is space before 'way' and space is not a character in 'a-z'[C[C[C[C[1@#[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+... # uppercase 'A-z[KZ' can also be used as the loc[K[K[K[K[K[K[K[Kw[K[Ks well.
+... 
+>>> # '0-9' can also be matched as well for numbers
+... 
+>>> # We can o[Kcombine as many ranges and symbols as we want, like this
+... pr[K[K
+>>> print()r)e).)s)e)a)rch()[C)'))c))l))o))u))d))[))]))a]))-]))z]))A]))-]))Z]))0]))-]))9]))[C')),)) ))'))c))l))o))u))d))y))'))[C[C
+<_sre.SRE_Match object; span=(0, 6), match='cloudy'>
+>>> print(re.search('cloud[a-zA-Z0-9]', 'cloudy'))9'))[C[C[C
+<_sre.SRE_Match object; span=(0, 6), match='cloudy'>
+>>> print(re.search('cloud[a-zA-Z0-9]', 'cloudy9'))9'))9'))[C[C[C
+<_sre.SRE_Match object; span=(0, 6), match='cloudy'>
+>>> print(re.search('cloud[a-zA-Z0-9]', 'cloudy999'))[2P'))[1P'))9'))[1P))"))[1Pcloudy9"))"cloudy9"))[C[C[1P[1@"[1P[1@"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+<_sre.SRE_Match object; span=(0, 6), match='cloudy'>
+>>> print(re.search("cloud[a-zA-Z0-9]", "cloudy9"))[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C'cloud[a-zA-Z0-9]', 'cloudy999'))[1P[1P[1P[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+None
+>>> print(re.search('cloud[0-9]', 'cloudy999'))[1@y[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+<_sre.SRE_Match object; span=(0, 7), match='cloudy9'>
+>>> print(re.search('cloudy[0-9]', 'cloudy999'))[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C"cloud[a-zA-Z0-9]", "cloudy9"))[C[C[C[C[C[C[C

@@ -1,0 +1,422 @@
+Script started on 2020-05-26 13:23:36+0100
+]0;azeez@azeez-Latitude-E5410: ~/Documents[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents[00m$ python3
+Python 3.6.9 (default, Apr 18 2020, 01:56:04) 
+[GCC 8.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> # Week2
+... 
+>>> # Reading Files in Python
+... 
+>>> file = open('spider.txt')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+FileNotFoundError: [Errno 2] No such file or directory: 'spider.txt'
+>>> to[K[Kfile = open('spider.txt')
+>>> print(fil[K[K[K[K[K[K[K[K[Kprint(fi[K[K)f)i)l)e).)r)e)ad)l)ine)()[C)[C
+
+>>> 
+]0;azeez@azeez-Latitude-E5410: ~/Documents[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents[00m$ python3
+Python 3.6.9 (default, Apr 18 2020, 01:56:04) 
+[GCC 8.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> file = open('spider.txt")
+  File "<stdin>", line 1
+    file = open('spider.txt")
+                            ^
+SyntaxError: EOL while scanning string literal
+>>> file = open('spider.txt")[1P)')[C
+>>> print(file.rae[K[Kae[K[Keadline())
+The itsy bitsy spider climbed up the waterspout.
+
+>>> print(file.readline())
+Down came the rain
+
+>>> print(file.read())
+and washed the spider out.
+Out came the sun
+and dried up all the rain
+and the itsy bitsy spider climbed up the spout again.
+
+>>> file.close()
+>>> with open('spider.txt"0[K[K') as file:
+...     [print([K[K[K[K[K[K[Kprint(file.readline())
+... 
+The itsy bitsy spider climbed up the waterspout.
+
+>>> # using 'with' j[Kkjey[K[K[Keyword will make to autmatically close the file. but we'll not be able to use the file variable [K[Ke anywhere again oi[K[Kin our file.
+... 
+>>> 
+>>> I[K# Iterating through Files
+... 
+>>> wwith [K[K[K[K[Kith open('spider.yt[K[Ktxt') as file:
+...     for line in file:
+...             print(line.upper())
+... 
+THE ITSY BITSY SPIDER CLIMBED UP THE WATERSPOUT.
+
+DOWN CAME THE RAIN
+
+AND WASHED THE SPIDER OUT.
+
+OUT CAME THE SUN
+
+AND DRIED UP ALL THE RAIN
+
+AND THE ITSY BITSY SPIDER CLIMBED UP THE SPOUT AGAIN.
+
+>>> wi[K[K# to remove the lineelinexlinetlinerlinealine line[C[C[C[C
+... 
+>>> with open('spider.txt') as file:
+...     for line in file:
+...             print(line.strip().upper())
+... 
+THE ITSY BITSY SPIDER CLIMBED UP THE WATERSPOUT.
+DOWN CAME THE RAIN
+AND WASHED THE SPIDER OUT.
+OUT CAME THE SUN
+AND DRIED UP ALL THE RAIN
+AND THE ITSY BITSY SPIDER CLIMBED UP THE SPOUT AGAIN.
+>>> # strip is used on each line to remove the newline character which is at the end of each lk[Kine.
+... 
+>>> # reading file line to a list
+... 
+>>> file =[K= open('spider')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+FileNotFoundError: [Errno 2] No such file or directory: 'spider'
+>>> file = open('spider').').')[1P')t')x')t')[C[C
+>>> lines = file.readlines()
+>>> file.close()
+>>> # even the filke[K[Ke is closed, the lines b[Kvariable has all the lines in the file[K[K[K[Kclosed file, so we can use it[K[K[K any list method on it.
+... 
+>>> # Let's sort th[K[Kit [K
+... 
+>>> lines.sort()
+>>> print(lines)
+['Down came the rain\n', 'Out came the sun\n', 'The itsy bitsy spider climbed up the waterspout.\n', 'and dried up all the rain\n', 'and the itsy bitsy spider climbed up the spout again.\n', 'and washed the spider out.\n']
+>>> 
+>>> 
+>>> # Writing Contebn[K[Knt to File
+... 
+>>> with open('novel.txt', 'w') as file [K:
+...     file.write()")[1P)')I)t)s)[1P) )w)a)s) )a) )d)a)r)k) )a)n)d) )s)t)o)r)m)y) )n)i)g)h)t)')[C)[K
+... 
+30
+>>> # you[K[K[K'w' - writing |  'r' - reading |[K |  a[K'a' - appene[Kd
+... # if 'w' is used to open a file, the [K[K[K[K[K[K[K[K[K[K[Kn existing file[Ke, all t[Kit's content will be overwir[K[Kritten; use 'a' insteand [K[K[Kd to append
+... 
+>>> # Working with Foi[K[Kiles
+... 
+>>> # like, delete, rename, check when it was created and so on.
+... # This will lead us t o using the standard module, name [Kd O[Kos module
+... 
+>>> # [K[Kimo[Kport os
+>>> os.remove('novel.txt')
+>>> os.remove('novel.txt')[C[C[C[C[K# the file has been deleted, l[K[K[K
+... # let's run the remove function again to see w[Kif it was trully [K[Ky[K[Ky deleted
+... 
+>>> # let's run the remove function again to see if it was truly deleted[C[C[C[C[C[C[41Pthe file has been[C[C[C[C[C[C[C[C[C[C[C[C[5Pos.remove('novel.txt')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+FileNotFoundError: [Errno 2] No such file or directory: 'novel.txt'
+>>> # to rename a file
+... # currentName first [K[K[K[K[K[K[K, newName
+... 
+>>> os.rename(first_draft.txt''first_draft.txt'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C, 'finished_masterpiece.txt')
+>>> 
+>>> 
+>>> # To check if a file exist or to pe[K[K[K[K[K[K[K[K[K, we use a submodule[K[K[K[K[K[K-module of os modui[K[Kule, called path module, like thg[Kis -> os.path
+... 
+>>> # we can use the exist function to check if a file exist.
+... 
+>>> os.path.exists('finished_masterpiece.txt')
+True
+>>> os.path.exists('underfinished_masterpieces[K.txt')([K
+False
+>>> # the exist function can be usef[K[K[K[K[K[K[Kis useful and can [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K very useful and can be used to check if a file exists before we start readingfro[K[K[K from it
+... # or [K[Kr to check if i[Ka file does not exist before we start creating it and[K[K[K[K[K[Kand writing to it.
+... 
+>>> # More File information
+... # like checking wi[Khen a file was last modified; the size of a file and so on.
+... 
+>>> os[K[K# to check size f=of a file[K[K[K[K[K[K[K[K[K[K[Kof [Ka [K[K a file
+... os.path.getsize('spider.txt')
+192
+>>> # to check the last time when a file was modified
+... 
+>>> os.pathq[K.getmtime('spider'txt[K[K[K[K.txt;[K')
+1590496353.77342
+>>> # above is th [K[Ke[K[Kthe file time stamp, ==[K[K[K[K; this starts calu[Kculating from a[K1970 when linux[K[K[K[K[Kunix was first published[1@J[1@a[1@n[1@.[1@ [C[1@1[1@s[1@t[1@,[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@o[1@s[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.
+... # to make it a more readable time, we will need to use a datei[Ktime module, like below
+... import data[Ketime
+>>> timestamp = datetime.datetu[Kime[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kos.path.getmtime('spider.txt')
+>>> datetime.datetime.fromtimestamp(timestamp)
+datetime.datetime(2020, 5, 26, 13, 32, 33, 773420)
+>>> # to obtain a full or absolute path of a given file
+... os.path.abspath('spider.txt')
+'/home/azeez/Documents/spider.txt'
+>>> 
+>>> # There is not[K need to memoriswe[K[K[Kze all the discussed functvions[K[K[K[K[Kions of[Kr mo[Kethods, just rea[Ksearch it whenever you need to work with it.
+... 
+>>> 
+>>> 
+>>> # Directories | Folders
+... 
+>>> # to know a current working directory
+... 
+>>> os.cw[K[Kgetq[Kcwd()
+'/home/azeez/Documents'
+>>> 
+>>> # to create a f[Kdirectory
+... os.mkdir('new_dir')
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+FileExistsError: [Errno 17] File exists: 'new_dir'
+>>> # that n=[K[K[K[K[Ke given direcor[K[Ktory name already exists...lte[K[Ket's try new name
+... os.mkdir('new_dir1')
+>>> 
+>>> # change to another directory
+... os.chdir('new_dir1"[K')
+>>> os.getcwd()
+'/home/azeez/Documents/new_dir1'
+>>> os[K[K3[K# remove a directory
+... # let's create one first
+... os.mkdir('another_dir')
+>>> #[K
+>>> # let's remove it
+... os.remove[K[K[K[K[Kmdir(ano[K[K[K'another_dir')
+>>> 
+>>> os.[K[K[Kwith open('').').')/')[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kos.mkdir('').').')/')w')e')b')s')i')t')e')[C[C
+>>> os.mkfifo([K[K[Kle[K[K[K[K[K[Ktou[K[K[K[K[K[Kos.listdir('../website')
+['favicon.ico', 'index.html']
+>>> os.listdir('../website')[C[C[C[C[C[C[C[2Pmkdir('../website')/')i')m')a')g')e')s')[C[C
+>>> os.mkdir('../website/images')[C[C[C[C[C[C[C[5Plistdir('../website')
+['favicon.ico', 'index.html', 'images']
+>>> 
+>>> # to know if an[K[K[K[K[Kif the above listed items are file or fi[K[Kdirectory[Kies[C[C[C[C[1@s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+... dir = ''.'.'/'w'e'b's'i't'e'[C
+>>> for name in os.path.listd[K[K[K[K[K[K[K[K[K[Klistdir(dir):
+...     fullname == [K[K os.path.join(dir, name)  # we are adding the path seperator between each item - na[K[Ki.e name and directory - i.e ../website
+...     if os.path.isdir(fullname):
+...             print()")[1P)')')f')u')[1P')[1P'){')}') ')i')s') ')a') ')d')i')r')e')c')t')o')r')y')[C.)f)o)r)m)a)t)()[C)f))u))l))l))n))a))e))m))[1P))[1P))m))e))[C[C
+...     else:
+...             print()')'){')}') ')i')s') ')a') ')f')i')l')e')[C.)f)o)r)m)a)t)()[C)f))u))l))l))n))a))m))e))[C[C
+... 
+../website/favicon.ico is a file
+../website/index.html is a file
+../website/images is a directory
+>>> 
+]0;azeez@azeez-Latitude-E5410: ~/Documents[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents[00m$ exit
+exit
+
+Script done on 2020-05-26 14:53:23+0100
+Script started on 2020-05-28 04:28:18+0100
+]0;azeez@azeez-Latitude-E5410: ~/Documents[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents[00m$ python3
+Python 3.6.9 (default, Apr 18 2020, 01:56:04) 
+[GCC 8.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+]0;azeez@azeez-Latitude-E5410: ~/Documents[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents[00m$ exit
+exit
+
+Script done on 2020-05-28 04:28:48+0100
+Script started on 2020-05-28 04:29:30+0100
+]0;azeez@azeez-Latitude-E5410: ~/Documents[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents[00m$ exitpython3
+Python 3.6.9 (default, Apr 18 2020, 01:56:04) 
+[GCC 8.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+>>> 
+>>> # What is [K[K[K[K[K[K[K[KCSV files
+... 
+>>> 
+>>> # Reading CSV file[C file- file[C fileC fileo filem filem filea file[C fileS filee filep filee filer filea filet filee filed file[C fileV filea filel fileu filee file[C[C[C[C[C
+... import csv
+>>> f = open('csv_file')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+FileNotFoundError: [Errno 2] No such file or directory: 'csv_file'
+>>> f = open('csv_file').')t')x')t')[C[C
+>>> # Now, we can parse (analyz[Kse the content) using the csv module which i just imported[1P[1@w[1@e[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+... c[Kcsv_f = csv.reader(f)
+>>> # Now, let;s[K[K's access the content of csv_f varaiable.
+... for row in csv_f[Kf:
+... # ech [K[K[K[Kcav[K[Ksv_fi[K is [K[K[Kc[K[K conat[K[Ktain each of the [K[K[K[K[K[K[Kin a the [K[K[K[K[K[Kthe i[Kgiven file and ea[K[K[K[K[K[Kin a list format, in which each field or column or cell is seperated by comma
+... # and sibce [K[K[K[Knce we have 3 fields, we are [K[K[K[K[K[K[K[K[K in each row, we will then need to unpack the 3 fields in[K[Kand store their valuse[K[Kes in a 3 different valu[K[Kriables
+... # we will do[K[Kbe doing this[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kpython will be doing this for us, on each iteration.
+...     name_field, phone_number_field, role_field = row
+...     print()')')N')a')m')e') ')[1P'):')-') '){')}') ')|') ')P')h')o')[1P')[1P')[1P')M')o')b')i')l')e'):')-') '){')}') ')|')[1@ [C[C[1@ [C[C[C[C[C[C[C[C[C[C[C[C |')[C ') ')R')o')l')e'):')-') '){')}')[C.)f)o)r)m)a)t)()[C)n))a))m))e))_))f))i))e))l))d)),))p))h))o))n))e))_))n))u))m))b))e))r))_))f))i))e))l))d)),))r))o))l))e))_))f))i))e))l))d))[C[C
+... 
+Name:- Sabrina Green  |  Mobile:- 802-867-5309  |  Role:- System Administrator
+Name:- Eli Jones  |  Mobile:- 684-3481127  |  Role:- IT specilaist
+Name:- Melody Daniels  |  Mobile:- 846-687-7436  |  Role:- Programmer
+Name:- Charlies Rivera  |  Mobile:- 698-746-3357  |  Role:- Web Developer
+>>> 
+>>> 
+>>> 
+>>> # let's close the file since we are done with it.
+... f.close()
+>>> 
+>>> 
+>>> 
+>>> 
+>>> # Generating CSv[KV file
+... 
+>>> # storing the data we want to use into a list
+... hosts = [['workstation.local','192.168.0.[K[K25.46',[K],['weserver[K[K[K[K[K[K[Kebserver.local','10.2.5.6']]
+>>> # Now that we have our data stored in av[K variable
+... # let's vc[K[Kcreate a file in [Kside which we will store our csv[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K.csv file inside which we will store our data
+... with open('hostd[Ks.csv' 'w') as file:
+...     # let's create instance of csv write class and store it in a variable
+...     write[K[K[K[K[Kcsv_write_classs[K = csv.writer(fi[K[Kfile)
+...     # let;s [K[K[K's call one of the [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kthe csv write class has two methods to write data into a file, the first of which is writerow() which writesa row at a time and
+...     # writerows() which writes all rows at the same time. Since a[Kwe have all our data in a variable, let;'[K[K's write it [K[K[Kthem at once.
+...     cs[K[Kcsv_f[Kwrite_class.writeroo[Kws(hosts)
+... 
+Traceback (most recent call last):
+  File "<stdin>", line 3, in <module>
+FileNotFoundError: [Errno 2] No such file or directory: 'hosts.csvw'
+>>>     csv_write_class.writerows(hosts)[C[C[C[C[C[C[C[C# writerows() which writes all rows at the same time. Since we have all our data in a variable, let's write them at once.[C[C[C[C[C[C[C[C[C[Cthe csv write class has two methods to write data into a file, the first of which is writerow() which writesa row at a time and[C[C[C[C[C[C[C[Ccsv_write_class = csv.writer(file)[K[C[C[C[C[C[C[C[C# let's create instance of csv write class and store it in a variable[C[C[C[C[38Pwith open('hosts.csv' 'w') as file:[1@,[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+... with open('hosts.csv', 'w') as file:[C[C[C[C    csv_write_class.writerows(hosts)[C[C[C[C[C[C[C[C# writerows() which writes all rows at the same time. Since we have all our data in a variable, let's write them at once.[C[C[C[C[C[C[C[C[C[Cthe csv write class has two methods to write data into a file, the first of which is writerow() which writesa row at a time and[C[C[C[C[C[C[C[Ccsv_write_class = csv.writer(file)[K[C[C[C[C[C[C[C[C# let's create instance of csv write class and store it in a variable
+...     # let's create instance of csv write class and store it in a variable[C[C[C[C[37Pwith open('hosts.csv', 'w') as file:[C[C[C[C    csv_write_class.writerows(hosts)[C[C[C[C[C[C[C[C# writerows() which writes all rows at the same time. Since we have all our data in a variable, let's write them at once.[C[C[C[C[C[C[C[C[C[Cthe csv write class has two methods to write data into a file, the first of which is writerow() which writesa row at a time and[C[C[C[C[C[C[C[Ccsv_write_class = csv.writer(file)[K
+...     csv_write_class = csv.writer(file)[C[C[C[C[C[C[C[C# let's create instance of csv write class and store it in a variable[C[C[C[C[37Pwith open('hosts.csv', 'w') as file:[C[C[C[C    csv_write_class.writerows(hosts)[C[C[C[C[C[C[C[C# writerows() which writes all rows at the same time. Since we have all our data in a variable, let's write them at once.[C[C[C[C[C[C[C[C[C[Cthe csv write class has two methods to write data into a file, the first of which is writerow() which writesa row at a time and
+...     # the csv write class has two methods to write data into a file, the first of which is writerow() which writesa row at a time and[C[C[C[C[C[C[C[Ccsv_write_class = csv.writer(file)[K[C[C[C[C[C[C[C[C# let's create instance of csv write class and store it in a variable[C[C[C[C[37Pwith open('hosts.csv', 'w') as file:[C[C[C[C    csv_write_class.writerows(hosts)[C[C[C[C[C[C[C[C# writerows() which writes all rows at the same time. Since we have all our data in a variable, let's write them at once.
+...     # writerows() which writes all rows at the same time. Since we have all our data in a variable, let's write them at once.[C[C[C[C[C[C[C[C[C[Cthe csv write class has two methods to write data into a file, the first of which is writerow() which writesa row at a time and[C[C[C[C[C[C[C[Ccsv_write_class = csv.writer(file)[K[C[C[C[C[C[C[C[C# let's create instance of csv write class and store it in a variable[C[C[C[C[C[C[C[C[35Pcsv_write_class = csv.writer(file)[C[C[C[C[C[C[C[C# let's create instance of csv write class and store it in a variable[C[C[C[C[37Pwith open('hosts.csv', 'w') as file:[C[C[C[C    csv_write_class.writerows(hosts)
+... 
+>>> 
+]0;azeez@azeez-Latitude-E5410: ~/Documents[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents[00m$ cat hosts.csv 
+workstation.local,192.168.25.46
+webserver.local,10.2.5.6
+]0;azeez@azeez-Latitude-E5410: ~/Documents[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents[00m$ cat hosts.csv [7Ppython3
+Python 3.6.9 (default, Apr 18 2020, 01:56:04) 
+[GCC 8.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+>>> 
+>>> 
+>>> 
+>>> # Reading and Writing data[C[1@f[1@r[1@o[1@m[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[Kto a csv file
+... # with a dictionary
+... 
+>>> 
+]0;azeez@azeez-Latitude-E5410: ~/Documents[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents[00m$ cat software.csv 
+name,version,status,users
+MailTree,5.34,production,324
+CalDoor,1.25.1,beta,22
+Chatty Chicken,0.34,alpha,4
+]0;azeez@azeez-Latitude-E5410: ~/Documents[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents[00m$ cat software.csv [10Ppython3
+Python 3.6.9 (default, Apr 18 2020, 01:56:04) 
+[GCC 8.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> with open('software.csv',[K) as file:
+...     reader = csv[K[K[K[K[K[K[K[K[K[K[K[K[K
+KeyboardInterrupt
+>>> import csv
+>>> with open('software.csv') as file:
+...     reader = csv.DictReader(file)  # t[KDictReader is a csv method or [K[K[K(function) that turns ech[K[Kach row in a given file to dictionary data-type
+...     for row in reader:
+...             print()')'){')}') ')h')a')s') ')('))')[1P')[1P'){')}') ')u')s')e')r')[Cs')[C.)f)o)r)m)n)[1P)a)t)()[C)r))o))w))[))]))']))']))n']))a']))m']))e']))[C[C,)) ))r))o))w))[))]))']))']))u']))s']))e']))r']))s']))[C[C[C[C
+... 
+MailTree has 324 users
+CalDoor has 22 users
+Chatty Chicken has 4 users
+>>> users = [][K{}'}n}a}m}e}'}:} }'}S}o}l} }M}a}n}s}i}'},} }'}u}s}e}r}n}a}m}e}'}:} }'}s}o}l}m}'},} }'}d}e}p}a}r}t}m}e}n}t}'}:}'}I}T} 'IT}[C[C[C }i}n}s}[1P}f}r}s}[1P}a}s}t}r}u}c}t}u}r}e}'}[C,
+... [[K{}'}n}a}m}e}'}:} }L}i}o}n} }[1P}[1P} }N}e}l}s}o}n}[1P}[1P}[1P}[1P}[1P}[1P}[1P}[1P}[1P}[1P}'}L}i}o} }N}e}l}s}o}n}'},} }'}u}s}e}r}n}a}m}e}'}:} }'}l}i}o}n}'},} }'}d}e}p}a}r}t}m}e}n}t}'}:} }'}U}s}e}r} }E}x}p}e}i}e}n}c}e}[1P}[1P}[1P}[1P}[1P}r}i}e}n}d}=}c}e} }[1P}[1P}[1P}[1P}[1P}c}e} }R}e}s}e}a}r}c}h}'}[C,
+... {{[K}'}n}a}m}e}'}:} }'}C}h}a}r}l}u}e}[1P}[1P}i}e} }G}r}e}y}'},} }'}u}s}e}r}n}a}m}e}'}:} }'}g}r}e}w}y}[1P}[1P}y}c}'},} }d}e}p}a}r}t}m}e}n}t}'}:} }[1@'[C[C[C[C[C[C[C[C[C[C[C[C[C'}D}E}v}e}l}[1P}[1P}[1P}[1P}e}v}e}l}o}p}m}e}n}t}'}[C]
+>>> # Now that we have the dat [Ka that we want to write[C[C[C[1@i[1@n[1@ [1@a[1@ [1@l[1@i[1@s[C[1@t[1@ [1@o[1@f[1@ [1@d[1@i[1@c[C[1@t[1@i[1@o[1@n[1@a[1@r[1@y[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+... # let's define the list of keys w[Kthat we will user [K[K to fetch each data
+... keys = []']n]a]m]e]'],] ]']u]s]e]r]m]n]n][1P][1P][1P]n]a][1P]n]a]m]e]'],] ]d][1P]']d]e]p]a]s]r]t]m]e]n]t]'][1Prtment'][C[C[C[C[C[C[C[C
+>>> # let's create a csv file and write the above data to it.
+... with open('by_department.csv', 'w') as file:
+...     writer = csv.DictWriter(file),) )f)i)e)l)d)n)a)m)e)s)=)k)e)y)s)[C  # DictWriter is a C[Kcsv-module method[K[K[K[K[K[Kfunction that writes the content of the data
+...     # in a given file - i[Kfile variable is used to hold a connection to a file.
+...     # A given file name or variable to a file is the first parate[K[Kmeteer[K[Kr
+...     # While the key for the data that is going to be write[Kten [K, is the second parat[Kmeter of this DictWriter function
+...     writer.writeheader()    # .writeheader is a method of the .DictWriter class that write the key as[K[K[K[K[K[K[K[K[Khe given keys as a [K[Kheader, just as the name implies
+...     writer.writerows(users)  # w[K.writerows() of course writes all the data in a given file or variable [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kthe given data into our csv file as[Kt a go[1@-[C[1@ [1P[C[1@ [1P[1P[C[1@ [1@-[C[1@ [1@i[1@n[C[1@ [1@t[1@h[1@i[1@s[C[1@ [1@i[1@n[1@s[1@t[1@a[1@n[1@c[1@e[1@,[C[1@ [1@u[1@s[1@e[1@r[1@s[C[1@ [1@w[1@h[1@i[1@c[1@h[C[1@ [1@c[1@o[1@n[1@t[1@a[1@i[1@n[1@s[C[1@ l into our csv file at a go [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci into our csv file at a goo[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs into our csv file at a go[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ct into our csv file at a go[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C into our csv file at a go[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co into our csv file at a go[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cf into our csv file at[1@ [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C into our csv file a[1@t[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cinto our csv file at[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C into our csv file at [1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C into our csv file at a[1P go[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cinto our csv file at a [1Pgo[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C into our csv file at a g[1Po[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C into our csv file at a go[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C into our csv file at a go [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P go[1Pgo[1Po[K users which contains the list [K[K[K[K[K[K[K[K[Klist of dictionary
+...     # , tall[K[K[K[Kall those list w[Kwill [K[K[K[K[K[K[Kts will be written at a go.
+... 
+Traceback (most recent call last):
+  File "<stdin>", line 8, in <module>
+  File "/usr/lib/python3.6/csv.py", line 158, in writerows
+    return self.writer.writerows(map(self._dict_to_list, rowdicts))
+  File "/usr/lib/python3.6/csv.py", line 151, in _dict_to_list
+    + ", ".join([repr(x) for x in wrong_fields]))
+ValueError: dict contains fields not in fieldnames: 'username'
+>>>     # , all those lists will be written at a go.[C[C[C[C[C[C[C[Cwriter.writerows(users)  # .writerows() of course writes all the given data - in this instance, users which contains list of dictionary[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cheader()    # .writeheader is a method of the .DictWriter class that write the given keys as header, just as the name implies[C[C[C[C[C[C[C[C[28P# While the key for the data that is going to be written, is the second parameter of this DictWriter function[C[C[C[C[C[C[C[C[C[C[45PA given file name or variable to a file is the first parameter[C[C[C[C[C[C[C[C[C[Cin a given file - file variable is used to hold a connection to a file.[C[C[C[C[C[C[C[Cwriter = csv.DictWriter(file, fieldnames=keys)  # DictWriter is a csv-module function that writes the content of the data[C[C[C[C[81Pwith open('by_department.csv', 'w') as file:[C[C[C[C# let's create a csv file and write the above data to it.
+... # let's create a csv file and write the above data to it.[C[C[C[C[9P    # , all those lists will be written at a go.[C[C[C[C[C[C[C[Cwriter.writerows(users)  # .writerows() of course writes all the given data - in this instance, users which contains list of dictionary[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cheader()    # .writeheader is a method of the .DictWriter class that write the given keys as header, just as the name implies[C[C[C[C[C[C[C[C[28P# While the key for the data that is going to be written, is the second parameter of this DictWriter function[C[C[C[C[C[C[C[C[C[C[45PA given file name or variable to a file is the first parameter[C[C[C[C[C[C[C[C[C[Cin a given file - file variable is used to hold a connection to a file.[C[C[C[C[C[C[C[Cwriter = csv.DictWriter(file, fieldnames=keys)  # DictWriter is a csv-module function that writes the content of the data[C[C[C[C[81Pwith open('by_department.csv', 'w') as file:[C[C[C[C# let's create a csv file and write the above data to it.[C[C[C[C[13Pwith open('by_department.csv', 'w') as file:
+... with open('by_department.csv', 'w') as file:[C[C[C[C# let's create a csv file and write the above data to it.[C[C[C[C[9P    # , all those lists will be written at a go.[C[C[C[C[C[C[C[Cwriter.writerows(users)  # .writerows() of course writes all the given data - in this instance, users which contains list of dictionary[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cheader()    # .writeheader is a method of the .DictWriter class that write the given keys as header, just as the name implies[C[C[C[C[C[C[C[C[28P# While the key for the data that is going to be written, is the second parameter of this DictWriter function[C[C[C[C[C[C[C[C[C[C[45PA given file name or variable to a file is the first parameter[C[C[C[C[C[C[C[C[C[Cin a given file - file variable is used to hold a connection to a file.[C[C[C[C[C[C[C[Cwriter = csv.DictWriter(file, fieldnames=keys)  # DictWriter is a csv-module function that writes the content of the data
+...     writer = csv.DictWriter(file, fieldnames=keys)  # DictWriter is a csv-module function that writes the content of the data[C[C[C[C[81Pwith open('by_department.csv', 'w') as file:[C[C[C[C# let's create a csv file and write the above data to it.[C[C[C[C[9P    # , all those lists will be written at a go.[C[C[C[C[C[C[C[Cwriter.writerows(users)  # .writerows() of course writes all the given data - in this instance, users which contains list of dictionary[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cheader()    # .writeheader is a method of the .DictWriter class that write the given keys as header, just as the name implies[C[C[C[C[C[C[C[C[28P# While the key for the data that is going to be written, is the second parameter of this DictWriter function[C[C[C[C[C[C[C[C[C[C[45PA given file name or variable to a file is the first parameter[C[C[C[C[C[C[C[C[C[Cin a given file - file variable is used to hold a connection to a file.[C[C[C[C[C[C[C[Cwriter = csv.DictWriter(file, fieldnames=keys)  # DictWriter is a csv-module function that writes the content of the data[C[C[C[C[C[C[C[C[48P# in a given file - file variable is used to hold a connection to a file.
+...     # in a given file - file variable is used to hold a connection to a file.[C[C[C[C[C[C[C[Cwriter = csv.DictWriter(file, fieldnames=keys)  # DictWriter is a csv-module function that writes the content of the data[C[C[C[C[81Pwith open('by_department.csv', 'w') as file:[C[C[C[C# let's create a csv file and write the above data to it.[C[C[C[C[9P    # , all those lists will be written at a go.[C[C[C[C[C[C[C[Cwriter.writerows(users)  # .writerows() of course writes all the given data - in this instance, users which contains list of dictionary[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cheader()    # .writeheader is a method of the .DictWriter class that write the given keys as header, just as the name implies[C[C[C[C[C[C[C[C[28P# While the key for the data that is going to be written, is the second parameter of this DictWriter function[C[C[C[C[C[C[C[C[C[C[45PA given file name or variable to a file is the first parameter
+...     # A given file name or variable to a file is the first parameter[C[C[C[C[C[C[C[C[C[Cin a given file - file variable is used to hold a connection to a file.[C[C[C[C[C[C[C[Cwriter = csv.DictWriter(file, fieldnames=keys)  # DictWriter is a csv-module function that writes the content of the data[C[C[C[C[81Pwith open('by_department.csv', 'w') as file:[C[C[C[C# let's create a csv file and write the above data to it.[C[C[C[C[9P    # , all those lists will be written at a go.[C[C[C[C[C[C[C[Cwriter.writerows(users)  # .writerows() of course writes all the given data - in this instance, users which contains list of dictionary[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cheader()    # .writeheader is a method of the .DictWriter class that write the given keys as header, just as the name implies[C[C[C[C[C[C[C[C[28P# While the key for the data that is going to be written, is the second parameter of this DictWriter function
+KeyboardInterrupt
+>>>     # A given file name or variable to a file is the first parameter[C[C[C[C[C[C[C[C[C[Cin a given file - file variable is used to hold a connection to a file.[C[C[C[C[C[C[C[Cwriter = csv.DictWriter(file, fieldnames=keys)  # DictWriter is a csv-module function that writes the content of the data[C[C[C[C[81Pwith open('by_department.csv', 'w') as file:[C[C[C[C# let's create a csv file and write the above data to it.[C[C[C[C[9P    # , all those lists will be written at a go.[C[C[C[C[C[C[C[Cwriter.writerows(users)  # .writerows() of course writes all the given data - in this instance, users which contains list of dictionary[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cheader()    # .writeheader is a method of the .DictWriter class that write the given keys as header, just as the name implies[C[C[C[C[C[C[C[C[28P# While the key for the data that is going to be written, is the second parameter of this DictWriter function[C[C[C[C[C[C[C[C[C[C[45PA given file name or variable to a file is the first parameter[C[C[C[C[C[C[C[C[C[Cin a given file - file variable is used to hold a connection to a file.[C[C[C[C[C[C[C[Cwriter = csv.DictWriter(file, fieldnames=keys)  # DictWriter is a csv-module function that writes the content of the data[C[C[C[C[81Pwith open('by_department.csv', 'w') as file:[C[C[C[C# let's create a csv file and write the above data to it.[C[C[C[C[15Pkeys = ['name', 'usernname', 'department'][C[C[C[C# let's define the list of keys that we will use to fetch each data[C[C[C[C[25Pkeys = ['name', 'usernname', 'department'][1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+>>> keys = ['name', 'username', 'department'][C[C[C[C    # A given file name or variable to a file is the first parameter[C[C[C[C[C[C[C[C[C[Cin a given file - file variable is used to hold a connection to a file.[C[C[C[C[C[C[C[Cwriter = csv.DictWriter(file, fieldnames=keys)  # DictWriter is a csv-module function that writes the content of the data[C[C[C[C[81Pwith open('by_department.csv', 'w') as file:[C[C[C[C# let's create a csv file and write the above data to it.[C[C[C[C[13Pwith open('by_department.csv', 'w') as file:
+... with open('by_department.csv', 'w') as file:[C[C[C[C[3Pkeys = ['name', 'username', 'department'][C[C[C[C    # A given file name or variable to a file is the first parameter[C[C[C[C[C[C[C[C[C[Cin a given file - file variable is used to hold a connection to a file.[C[C[C[C[C[C[C[Cwriter = csv.DictWriter(file, fieldnames=keys)  # DictWriter is a csv-module function that writes the content of the data[C[C[C[C[81Pwith open('by_department.csv', 'w') as file:[C[C[C[C    writer = csv.DictWriter(file, fieldnames=keys)  # DictWriter is a csv-module function that writes the content of the data
+...     writer = csv.DictWriter(file, fieldnames=keys)  # DictWriter is a csv-module function that writes the content of the data[C[C[C[C[81Pwith open('by_department.csv', 'w') as file:[C[C[C[C[3Pkeys = ['name', 'username', 'department'][C[C[C[C    # A given file name or variable to a file is the first parameter[C[C[C[C[C[C[C[C[C[Cin a given file - file variable is used to hold a connection to a file.[C[C[C[C[C[C[C[Cwriter = csv.DictWriter(file, fieldnames=keys)  # DictWriter is a csv-module function that writes the content of the data[C[C[C[C[C[C[C[C[48P# in a given file - file variable is used to hold a connection to a file.
+...     # in a given file - file variable is used to hold a connection to a file.[C[C[C[C[C[C[C[Cwriter = csv.DictWriter(file, fieldnames=keys)  # DictWriter is a csv-module function that writes the content of the data[C[C[C[C[81Pwith open('by_department.csv', 'w') as file:[C[C[C[C[3Pkeys = ['name', 'username', 'department'][C[C[C[C    # A given file name or variable to a file is the first parameter[C[C[C[C[C[C[C[C[C[Cin a given file - file variable is used to hold a connection to a file.[C[C[C[C[C[C[C[C[C[C[9PA given file name or variable to a file is the first parameter
+...     # A given file name or variable to a file is the first parameter[C[C[C[C[C[C[C[C[C[Cin a given file - file variable is used to hold a connection to a file.[C[C[C[C[C[C[C[Cwriter = csv.DictWriter(file, fieldnames=keys)  # DictWriter is a csv-module function that writes the content of the data[C[C[C[C[81Pwith open('by_department.csv', 'w') as file:[C[C[C[C[3Pkeys = ['name', 'username', 'department'][C[C[C[C    # A given file name or variable to a file is the first parameter[C[C[C[C[C[C[C[C[C[Cin a given file - file variable is used to hold a connection to a file.[C[C[C[C[C[C[C[Cwriter = csv.DictWriter(file, fieldnames=keys)  # DictWriter is a csv-module function that writes the content of the data[C[C[C[C[81Pwith open('by_department.csv', 'w') as file:[C[C[C[C# let's create a csv file and write the above data to it.[C[C[C[C[9P    # , all those lists will be written at a go.[C[C[C[C[C[C[C[Cwriter.writerows(users)  # .writerows() of course writes all the given data - in this instance, users which contains list of dictionary[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cheader()    # .writeheader is a method of the .DictWriter class that write the given keys as header, just as the name implies[C[C[C[C[C[C[C[C[28P# While the key for the data that is going to be written, is the second parameter of this DictWriter function
+...     # While the key for the data that is going to be written, is the second parameter of this DictWriter function[C[C[C[C[C[C[C[C[C[C[45PA given file name or variable to a file is the first parameter[C[C[C[C[C[C[C[C[C[Cin a given file - file variable is used to hold a connection to a file.[C[C[C[C[C[C[C[Cwriter = csv.DictWriter(file, fieldnames=keys)  # DictWriter is a csv-module function that writes the content of the data[C[C[C[C[81Pwith open('by_department.csv', 'w') as file:[C[C[C[C[3Pkeys = ['name', 'username', 'department'][C[C[C[C    # A given file name or variable to a file is the first parameter[C[C[C[C[C[C[C[C[C[Cin a given file - file variable is used to hold a connection to a file.[C[C[C[C[C[C[C[Cwriter = csv.DictWriter(file, fieldnames=keys)  # DictWriter is a csv-module function that writes the content of the data[C[C[C[C[81Pwith open('by_department.csv', 'w') as file:[C[C[C[C    writer = csv.DictWriter(file, fieldnames=keys)  # DictWriter is a csv-module function that writes the content of the data[C[C[C[C[81Pwith open('by_department.csv', 'w') as file:[C[C[C[C# let's create a csv file and write the above data to it.[C[C[C[C[9P    # , all those lists will be written at a go.[C[C[C[C[C[C[C[Cwriter.writerows(users)  # .writerows() of course writes all the given data - in this instance, users which contains list of dictionary[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cheader()    # .writeheader is a method of the .DictWriter class that write the given keys as header, just as the name implies[C[C[C[C[C[C[C[C[28P# While the key for the data that is going to be written, is the second parameter of this DictWriter function[C[C[C[C[C[C[C[Cwriter.writeheader()    # .writeheader is a method of the .DictWriter class that write the given keys as header, just as the name implies
+...     writer.writeheader()    # .writeheader is a method of the .DictWriter class that write the given keys as header, just as the name implies[C[C[C[C[C[C[C[C[28P# While the key for the data that is going to be written, is the second parameter of this DictWriter function[C[C[C[C[C[C[C[C[C[C[45PA given file name or variable to a file is the first parameter[C[C[C[C[C[C[C[C[C[Cin a given file - file variable is used to hold a connection to a file.[C[C[C[C[C[C[C[Cwriter = csv.DictWriter(file, fieldnames=keys)  # DictWriter is a csv-module function that writes the content of the data[C[C[C[C[81Pwith open('by_department.csv', 'w') as file:[C[C[C[C[3Pkeys = ['name', 'username', 'department'][C[C[C[Cwith open('by_department.csv', 'w') as file:[C[C[C[C[3Pkeys = ['name', 'username', 'department'][C[C[C[C    # A given file name or variable to a file is the first parameter[C[C[C[C[C[C[C[C[C[Cin a given file - file variable is used to hold a connection to a file.[C[C[C[C[C[C[C[Cwriter = csv.DictWriter(file, fieldnames=keys)  # DictWriter is a csv-module function that writes the content of the data[C[C[C[C[81Pwith open('by_department.csv', 'w') as file:[C[C[C[C# let's create a csv file and write the above data to it.[C[C[C[C[9P    # , all those lists will be written at a go.[C[C[C[C[C[C[C[Cwriter.writerows(users)  # .writerows() of course writes all the given data - in this instance, users which contains list of dictionary[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cheader()    # .writeheader is a method of the .DictWriter class that write the given keys as header, just as the name implies[C[C[C[C[C[C[C[C[28P# While the key for the data that is going to be written, is the second parameter of this DictWriter function[C[C[C[C[C[C[C[Cwriter.writeheader()    # .writeheader is a method of the .DictWriter class that write the given keys as header, just as the name implies[C[C[C[C[C[C[C[C[28P# While the key for the data that is going to be written, is the second parameter of this DictWriter function[C[C[C[C[C[C[C[C[C[C[45PA given file name or variable to a file is the first parameter[C[C[C[C[C[C[C[C[C[Cin a given file - file variable is used to hold a connection to a file.[C[C[C[C[C[C[C[Cwriter = csv.DictWriter(file, fieldnames=keys)  # DictWriter is a csv-module function that writes the content of the data[C[C[C[C[81Pwith open('by_department.csv', 'w') as file:[C[C[C[C# let's create a csv file and write the above data to it.[C[C[C[C[15Pkeys = ['name', 'usernname', 'department'][C[C[C[C# let's define the list of keys that we will use to fetch each data[C[C[C[C[25Pkeys = ['name', 'usernname', 'department'][C[C[C[C# let's create a csv file and write the above data to it.[C[C[C[C[13Pwith open('by_department.csv', 'w') as file:[C[C[C[C    writer = csv.DictWriter(file, fieldnames=keys)  # DictWriter is a csv-module function that writes the content of the data[C[C[C[C[C[C[C[C[48P# in a given file - file variable is used to hold a connection to a file.[C[C[C[C[C[C[C[C[C[C[9PA given file name or variable to a file is the first parameter[C[C[C[C[C[C[C[C[C[Cin a given file - file variable is used to hold a connection to a file.[C[C[C[C[C[C[C[Cwriter = csv.DictWriter(file, fieldnames=keys)  # DictWriter is a csv-module function that writes the content of the data[C[C[C[C[81Pwith open('by_department.csv', 'w') as file:[C[C[C[C    writer = csv.DictWriter(file, fieldnames=keys)  # DictWriter is a csv-module function that writes the content of the data[C[C[C[C[C[C[C[C[48P# in a given file - file variable is used to hold a connection to a file.[C[C[C[C[C[C[C[C[C[C[9PA given file name or variable to a file is the first parameter[C[C[C[C[C[C[C[C[C[CWhile the key for the data that is going to be written, is the second parameter of this DictWriter function[C[C[C[C[C[C[C[Cwriter.writeheader()    # .writeheader is a method of the .DictWriter class that write the given keys as header, just as the name implies[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Prows(users)  # .writerows() of course writes all the given data - in this instance, users which contains list of dictionary[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cheader()    # .writeheader is a method of the .DictWriter class that write the given keys as header, just as the name implies[C[C[C[C[C[C[C[C[28P# While the key for the data that is going to be written, is the second parameter of this DictWriter function[C[C[C[C[C[C[C[C[C[C[45PA given file name or variable to a file is the first parameter[C[C[C[C[C[C[C[C[C[CWhile the key for the data that is going to be written, is the second parameter of this DictWriter function[C[C[C[C[C[C[C[Cwriter.writeheader()    # .writeheader is a method of the .DictWriter class that write the given keys as header, just as the name implies[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Prows(users)  # .writerows() of course writes all the given data - in this instance, users which contains list of dictionary[C[C[C[C[C[C[C[C# , all those lists will be written at a go.[K[C[C[C[C[C[C[C[Cwriter.writerows(users)  # .writerows() of course writes all the given data - in this instance, users which contains list of dictionary
+...     writer.writerows(users)  # .writerows() of course writes all the given data - in this instance, users which contains list of dictionary[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cheader()    # .writeheader is a method of the .DictWriter class that write the given keys as header, just as the name implies[C[C[C[C[C[C[C[C[28P# While the key for the data that is going to be written, is the second parameter of this DictWriter function[C[C[C[C[C[C[C[C[C[C[45PA given file name or variable to a file is the first parameter[C[C[C[C[C[C[C[C[C[Cin a given file - file variable is used to hold a connection to a file.[C[C[C[C[C[C[C[Cwriter = csv.DictWriter(file, fieldnames=keys)  # DictWriter is a csv-module function that writes the content of the data[C[C[C[C[81Pwith open('by_department.csv', 'w') as file:[C[C[C[C[3Pkeys = ['name', 'username', 'department'][C[C[C[C    # A given file name or variable to a file is the first parameter[C[C[C[C[C[C[C[C[C[Cin a given file - file variable is used to hold a connection to a file.[C[C[C[C[C[C[C[Cwriter = csv.DictWriter(file, fieldnames=keys)  # DictWriter is a csv-module function that writes the content of the data[C[C[C[C[81Pwith open('by_department.csv', 'w') as file:[C[C[C[C# let's create a csv file and write the above data to it.[C[C[C[C[9P    # , all those lists will be written at a go.[C[C[C[C[C[C[C[Cwriter.writerows(users)  # .writerows() of course writes all the given data - in this instance, users which contains list of dictionary[C[C[C[C[C[C[C[C# , all those lists will be written at a go.[K
+... 
+>>> 
+]0;azeez@azeez-Latitude-E5410: ~/Documents[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents[00m$ cat by_department.csv 
+name,username,department
+Sol Mansi,solm,IT infrastructure
+Lio Nelson,lion,User Experience Research
+Charlie Grey,greyc,Development
+]0;azeez@azeez-Latitude-E5410: ~/Documents[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents[00m$ mk[K[Kexit
+exit
+
+Script done on 2020-05-28 05:46:23+0100
+Script started on 2020-05-29 05:08:11+0100
+]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ [K]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ [K]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ [K]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ [K]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ [K]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ [K]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ [K]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ [K]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ [K]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ [K]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ [K]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ [K]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ [K]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ [K]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ [K]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ [K]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ [K]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ [K]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ [K]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ [K]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ [K]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ [K]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ [K]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ [K]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ [K]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ [K]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ [K]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ [K]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ [K]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ python3
+Python 3.6.9 (default, Apr 18 2020, 01:56:04) 
+[GCC 8.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+>>> #[K
+>>> 
+>>> 
+>>> 
+>>> #Regular [C[C[C[C[C[1@ [C[C[C[C[C[C[C[C E x p r e s s i o n [C : [C [K- [C [K[1P [C [C[1@s[C[C[Cw e [C w i l l [C b e [C a b [1P [1P a b l e [C t o [C f i n d [C a n d [C w o r k [C w i t h [C t e x t s [C m o r e [C f l e x i b l y . 
+... 
+>>> # What are regular expressions: it is call e[K[Ked regex, it is used to search fro [K[K[Kor text via patt[K[K[K[Ksearch patters[Kns.
+... # In another words, it[K[Kregular expressions are [K[K[Kllow us to searcg[Kh fro[K[Kor a text for strings matching a specific pattern.
+... # It is used for text processing.
+... # It is also used to extract only the wanted part of a long texts[K[K[K[K[Kstrings or texts and numbers
+... # [K[K
+>>> 
+>>> 
+>>> 
+>>> 
+>>> # Why use regular expressions?
+... # [K[K# It is used to dues[K to the per[K[Kowerful features of it.
+... # it[K[KIt is not only used in python; it is used in other l[Kprogramming language as well.
+... 
+>>> loh[Kg = ""J"u"l"y" "3"1" "0"7":"5"1":"4"8" "m"y"c"o"m"p"u"t"e"r" "b"a"d"_"p"r"o"c"e"s"s"o"r"["1"2"3"4"5"]":" "E"R"R"O"R" "P"e"r"f"o"r"m"i"n"g" "p"a"c"k"a"g"e" "u"p"g"r"a"d"e"="[1P"[C
+>>> To[K[K#to[K[K to fetch [K or extract the character 12345 from the string in [K[K[Kof the l[K'log' vara[Kiable
+... 
+>>> inf[Kdex = lo
+locals(  log      
+>>> index = log.index("{[K[")
+>>> print(index)
+41
+>>> print(log[]i]n]d]e]x]+]1]:]i]n]d]e]x]+]6][C)  # the[Kis code means -> log[41+1:41+6] which equals to log[42:47]...the character from the [K[K[K[K42 to 47 will [K[K[K[Kill be printed, exclude[King 
+12345
+>>> # character 47, that is from character 42 to 46
+... 
+>>> # To use the regular expression, in case in future time when the position of the number wou[K[Kill be changed due to operating system upgrade and so on.
+... 
+>>> # To use the regular expression, we will need to import it's module in python, as thus:
+... import re
+>>> import re[C[C[C[C# To use the regular expression, we will need to import it's module in python, as thus:[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cin case in future time when the position of the number will be changed due to operating system upgrade and so on.[C[C[C[C[C[Ccharacter 47, that is from character 42 to 46[K[C[C[C[Cprint(log[index+1:index+6])  # this code means -> log[41+1:41+6] which equals to log[42:47]...the character from 42 to 47 will be printed, excluding [C[C[C[C[C[C[C[C[C[Cindex)[K[C[C[C[Cindex = log.index("[")[C[C[C[C# to fetch or extract the character 12345 from the string of the 'log' variable[C[C[C[Clog = "July 31 07:51:48 mycomputer bad_processor[12345]: ERROR Performing package upgrade"
+>>> regex = r""\"["("\"d"+")"\"]"[C
+>>> result = re.sa[Kearch(regex, log)
+>>> print(result[1])
+12345
+>>> print(result[1])[1P])0]):])[C[C
+Traceback (most recent call last):
+  File "<stdin>", line 1, i
