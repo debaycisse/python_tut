@@ -376,3 +376,65 @@ None
 exit
 
 Script done on 2020-05-29 14:36:49+0100
+Script started on 2020-06-03 12:52:34+0100
+]0;azeez@azeez-Inspiron-15-3567: ~/Documents/python_tut[01;32mazeez@azeez-Inspiron-15-3567[00m:[01;34m~/Documents/python_tut[00m$ python3
+Python 3.6.9 (default, Apr 18 2020, 01:56:04) 
+[GCC 8.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+>>> 
+>>> # T [K[KTo match one of the special char. ,[K[K we[K[K[K, we have to use escape char.
+... 
+>>> import re
+>>> 
+>>> print(re.search(r@[K'.com#[K', 'mydomain.com'))
+<_sre.SRE_Match object; span=(8, 12), match='.com'>
+>>> print(re.search(r'.com', 'mydomain.com'))[C[C[C[Cimport re[K[C[C[C[Cprint(re.search(r'.com', 'mydomain.com'))[1Pcom'))[1Pcom'))[1Pcom'))[1Pcom'))[1Pcom'))[1Pcom'))[1Pcom'))[1Pcom'))[1Pcom'))wcom'))lcom'))ecom'))[1Pcom'))[1Pcom'))ecom'))lcom'))[C[C[Ce'))[C[C[C
+<_sre.SRE_Match object; span=(2, 6), match='lcom'>
+>>> 
+>>> 
+>>> # To make it o[K[K the dot to be among the given pattern, other than treadt[K[Kted as s[Ka special chraracter.
+... 
+>>> print()r)e).)s)e)arch()r)').)c)o)m)'),)')')w')e')l')c')o')m')e')[C[C)
+<_sre.SRE_Match object; span=(2, 6), match='lcom'>
+>>> print(re.search(r'.com','welcome'))\.com','welcome'))[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+None
+>>> print(re.search(r'\.com','welcome'))[C[C[C[C[K
+>>> 
+>>> print(re.search(r'\.com','welcome'))[1P.com','welcome'))\.com','welcome'))
+None
+>>> ~ [K[K# The escape key maske [K[K[K[Kkes sure that our special char. d[Ksot [K[K[K[Kdot is [K[Ka[Ks natched just like laters[K[K[K[K[Ketter [Ks and nmberuber[C[C[C
+... 
+>>> 
+>>> # The escape key makes sure that our special char. dot is natched just like letters and nmuber[C[C[C[C[58Pprint(re.search(r'\.com','welcome'))~'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))m'))y'))d'))o'))[1P'))[1P'))[1P'))[1P'))g'))o'))o'))g'))l'))e')).'))c'))o'))m'))[C[C[C
+<_sre.SRE_Match object; span=(6, 10), match='.com'>
+>>> 
+>>> 
+>>> 
+>>> # When we see a pattern that incldes[K[K[Kudes backslash, it could be 
+... # 1. escaping special regex character or 
+... # 2. a special string chan[Kracter.
+... 
+>>> 
+>>> 
+>>> # \w - matches alphanumeric character, including space, tab and u[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kunderscores
+... 
+>>> # \w - matches alphanumeric character, including underscores[C[C[C[C[C[C[28P2. a special string character.[C[C[C[C[C[C1. escaping special regex character or [C[C[C[C[C[C[20@When we see a pattern that includes backslash, it could be[C[C[C[C[C[22Pprint(re.search(r'\.com','google.com'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))T'))h'))s'))[1P'))i'))s')) '))i'))s')) '))a'))n')) '))e'))x'))m'))p'))a'))l'))e'))[C[C[C[1P[1P[1P[1P[1@*[1@w[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+<_sre.SRE_Match object; span=(0, 4), match='This'>
+>>> print(re.search(r'\w*','This is an exmpale'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))[1P'))t'))h'))i'))s'))_'))i'))s'))_'))a'))n'))o'))t'))h'))e'))r'))_'))e'))x'))a'))m'))p'))l'))e'))[C[C[C
+<_sre.SRE_Match object; span=(0, 23), match='this_is_another_example'>
+>>> 
+>>> 
+>>> # There is also:
+... ~ \d [K[K[K[K[K# \d - for matching f[Kdigits
+... ~[K# \s - shitespace[1Phitespacewhitespace[C[C[C[C[C[C[C[C[C suc h[K[Kh as tab, newline character
+... 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> [K>>> exit()
+]0;azeez@azeez-Inspiron-15-3567: ~/Documents/python_tut[01;32mazeez@azeez-Inspiron-15-3567[00m:[01;34m~/Documents/python_tut[00m$ exit
+exit
+
+Script done on 2020-06-04 15:38:18+0100
