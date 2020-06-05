@@ -438,3 +438,22 @@ None
 exit
 
 Script done on 2020-06-04 15:38:18+0100
+Script started on 2020-06-05 05:20:59+0100
+]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ python3
+Python 3.6.9 (default, Apr 18 2020, 01:56:04) 
+[GCC 8.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> [K>>> 
+>>> 
+>>> 
+>>> # checkout the below on regular expression[1@a[1@r[1@t[1@i[1@c[1@l[1@e[1@s[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+... # https://docs.python.org/3/howto/regex.html
+... # https://docs.python.org/3/library/re.html
+... # https://docs.python.org/3/howto/regec[Kx.html#greedy-versus-non-greedy
+... # SHOUT OUT TO THE BELOW BIG-BOSS WHICH WILL[K[K[K[KEXPLAINS EACH STAGE OF A REGEX
+... 
+>>> EXIT()[K[K[K[K[K[Kexit()
+]0;azeez@azeez-Latitude-E5410: ~/Documents/python_sysadmin_tuts[01;32mazeez@azeez-Latitude-E5410[00m:[01;34m~/Documents/python_sysadmin_tuts[00m$ exit
+exit
+
+Script done on 2020-06-05 05:36:33+0100
